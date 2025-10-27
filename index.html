@@ -183,3 +183,125 @@
 
   <!-- Services -->
   <section id="services" class="wrap" aria-labelledby="services-title">
+    <h2 class="section-title" id="services-title">Weddings, Events & More</h2>
+    <p class="section-lead">From aisle to arch, centerpieces to personal flowers—we design cohesive florals that fit your palette and budget.</p>
+    <div class="split">
+      <div>
+        <ul>
+          <li><strong>Weddings:</strong> bridal bouquets, boutonnieres, ceremony arches, reception florals</li>
+          <li><strong>Corporate:</strong> galas, weekly lobbies, brand activations, client gifting</li>
+          <li><strong>Sympathy:</strong> standing sprays, casket sprays, remembrance arrangements</li>
+          <li><strong>Subscriptions:</strong> weekly or monthly fresh arrangements for home or office</li>
+        </ul>
+        <p class="note">Ask about sustainable options and seasonal/local stem lists.</p>
+        <a class="btn primary" href="mailto:events@bloomandpetal.example?subject=Wedding%20or%20Event%20Inquiry">Book a Consult</a>
+      </div>
+      <div class="card" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?q=80&w=1200&auto=format&fit=crop" alt="Wedding floral arch">
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="wrap" aria-labelledby="about-title">
+    <h2 class="section-title" id="about-title">About Our Studio</h2>
+    <div class="split">
+      <div>
+        <p>We’re a women‑led floral studio rooted in craft and community. Our designers favor seasonal stems from regional growers, pairing timeless composition with modern palettes.</p>
+        <div class="quote">“The bouquet was beyond perfect—exactly what I couldn’t quite put into words.” — Jenna R.</div>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?q=80&w=1200&auto=format&fit=crop" alt="Florist arranging flowers at a workbench" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="wrap" aria-labelledby="contact-title">
+    <h2 class="section-title" id="contact-title">Visit or Reach Out</h2>
+    <div class="split">
+      <div>
+        <form onsubmit="sendInquiry(event)">
+          <div class="two">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" required placeholder="Jane Doe" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required placeholder="jane@example.com" />
+            </div>
+          </div>
+          <div class="two">
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" placeholder="(555) 012‑3456" />
+            </div>
+            <div>
+              <label for="topic">Topic</label>
+              <select id="topic" name="topic">
+                <option>General Inquiry</option>
+                <option>Custom Bouquet</option>
+                <option>Wedding or Event</option>
+                <option>Subscription</option>
+              </select>
+            </div>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what you’re dreaming of…"></textarea>
+          </div>
+          <div>
+            <button class="cta" type="submit">Send Inquiry</button>
+            <span class="note">Or call <a href="tel:+15550123">(555) 012‑3</a> for same‑day delivery.</span>
+          </div>
+        </form>
+      </div>
+      <div>
+        <div class="card" style="height:280px;display:grid;place-items:center">
+          <div>
+            <strong>Bloom & Petal</strong><br>
+            123 Blossom St, Your City, MI 48000<br>
+            Mon–Fri 9–6 • Sat 10–4 • Sun closed<br>
+            <a href="https://maps.google.com" target="_blank" rel="noopener">Get Directions →</a>
+          </div>
+        </div>
+        <div class="card" style="margin-top:12px;padding:14px">
+          <strong>Follow</strong>
+          <p><a href="#">Instagram</a> · <a href="#">Facebook</a> · <a href="#">Pinterest</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <section class="wrap" style="padding:36px 20px">
+      <div class="foot-grid">
+        <div>
+          <div class="brand" style="color:#fff"><div class="logo" aria-hidden="true">🌸</div><span>Bloom & Petal</span></div>
+          <p class="small">© <span id="y"></span> Bloom & Petal. All rights reserved. Made with fresh stems and good coffee.</p>
+        </div>
+        <div>
+          <strong>Shop</strong>
+          <ul style="list-style:none;padding:0;margin:8px 0">
+            <li><a href="#bouquets">Bestsellers</a></li>
+            <li><a href="#services">Weddings</a></li>
+            <li><a href="#contact">Delivery</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Contact</strong>
+          <ul style="list-style:none;padding:0;margin:8px 0">
+            <li><a href="tel:+15550123">(555) 012‑3</a></li>
+            <li><a href="mailto:hello@bloomandpetal.example">hello@bloomandpetal.example</a></li>
+            <li>123 Blossom St, Your City</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </footer>
+
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>
